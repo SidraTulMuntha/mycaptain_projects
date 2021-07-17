@@ -1,0 +1,21 @@
+//program to find sum of digits. 
+
+#include<stdio.h>
+int add_digit(int);
+int main()
+{
+int n,result;
+    printf("Enter a number :");
+    scanf("%d",&n);
+    result=add_digit(n);
+    printf("%d\n",result);
+    return 0;
+}
+
+int add_digit(int n)
+{
+if (n==0)
+return 0;
+else 
+return(n%10+add_digit(n/10));
+}
