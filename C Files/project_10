@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<string.h>
+struct employee
+{
+char employee_name;
+int age;
+long long int number , salary;
+char name[34];
+};
+int main()
+{
+struct employee chirag,arnav,shivam,naveen;
+strcpy(chirag.name,"CHIRAG");
+strcpy(arnav.name,"ARNAV");
+strcpy(shivam.name,"SHIVAM");
+strcpy(naveen.name,"NAVEEN");
+chirag.age=30;
+arnav.age=32;
+shivam.age=28;
+naveen.age=36;
+chirag.number=9432578950;
+arnav.number=1687742329;
+shivam.number=6436906546;
+naveen.number=5432289806;
+chirag.salary=20000;
+arnav.salary=56000;
+shivam.salary=30000;
+naveen.salary=39000;
+printf("__________________________________________________\n");
+printf("NAME\t AGE\t PHONE NUMBER\t SALARY\n");
+printf("__________________________________________________\n");
+printf("%s\t %d\t %lld\t %lld\n ",chirag.name,chirag.age,chirag.number,chirag.salary);
+printf("%s\t %d\t %lld\t %lld\n ",arnav.name,arnav.age,arnav.number,arnav.salary);
+printf("%s\t %d\t %lld\t %lld\n ",shivam.name,shivam.age,shivam.number,shivam.salary);
+printf("%s\t %d\t %lld\t %lld\n ",naveen.name,naveen.age,naveen.number,naveen.salary);
+}
