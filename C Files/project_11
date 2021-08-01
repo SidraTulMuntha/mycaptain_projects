@@ -1,0 +1,85 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void deposite();
+void withdraw();
+void balance();
+float bal=10000;
+float amount = 0;
+float draw =0;
+int main ()
+{
+    int ch;
+    do
+    {
+        printf("\n***************************************************\n");
+        printf("\n WELCOME TO MYCAPTAIN'S BANKING\n");
+        printf("*****************************************************\n");
+        printf("1: Depost\n");
+        printf("2: withdraw\n");
+        printf("3: check balance\n");
+        printf("4: Exit\n");
+        printf("Enter your choice : ");
+        scanf("%d",&ch);
+        switch (ch)
+        {
+        case 1:deposite();
+            break;
+        case 2:withdraw();
+            break;
+        case 3:balance();
+            break;
+        case 4: 
+            break;
+        
+        default:printf("choose a valid option : ");
+            break;
+        }
+    } while (ch!=4);
+   return 0; 
+}
+
+void deposite()
+{
+    system("cls");
+    printf("\n*******************************************\n");
+    printf("Your current balance is : %f",bal);
+    printf("\n******************************************\n");
+    printf("Enter the amount :");
+    scanf("%f",&amount);
+    bal=amount+bal;
+    printf("\n*****************************************\n");
+    printf("Now Your current balance is : %f",bal);
+}
+
+void withdraw()
+{
+    system("cls");
+
+    printf("\n*******************************************\n");
+    printf("Your current balance is : %f",bal);
+    printf("\n******************************************\n");
+    printf("Enter the withdraw amount :");
+    scanf("%f",&draw);
+    if (bal<draw)
+    {
+        printf("You do not have sufficient balance \n");
+    }
+    else
+    {
+bal=bal-draw;
+    printf("\n*****************************************\n");
+    printf("Your updated  balance is : %f",bal);
+    }
+}
+
+void balance()
+{
+    system("cls");
+
+    printf("\n*******************************************\n");
+    printf("Your current balance is : %f",bal);
+    printf("\n******************************************\n");
+    
+    system("cls");
+}
