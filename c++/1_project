@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int a=15;
+cout<<"Size of variable a : "<<sizeof(a)<<endl;
+cout<<"Size of int data type : "<<sizeof(int)<<endl;
+cout<<"Size of char data type : "<<sizeof(char)<<endl;
+cout<<"Size of float data type : "<<sizeof(float)<<endl;
+cout<<"Size of double data type : "<<sizeof(double)<<endl;
+
+return 0;
+}
